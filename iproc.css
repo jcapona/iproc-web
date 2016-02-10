@@ -1,0 +1,30 @@
+body {
+  background-color: white;
+}
+
+#navbar {
+	background: white;
+	margin: 0 0 0 0;
+}
+#header {
+	background : url('img/banner.png') no-repeat center center;
+  	background-size: cover;
+  	margin: 0 0 0 0;
+  	height: 50vh;
+}
+
+#content {
+	margin: 0 0 0 0;
+}
+
+#social {
+	margin: 0 0 0 0;
+}
+
+#contact {
+	margin: 0 0 0 0;
+}
+
+#footer {
+	margin: 0 0 0 0;
+}
