@@ -8,23 +8,24 @@ body {
 }
 #header {
 	background : url('img/banner.png') no-repeat center center;
+	background-size: 100% 100%;
   	background-size: cover;
   	margin: 0 0 0 0;
   	height: 50vh;
 }
 
 #content {
-	margin: 0 0 0 0;
 }
 
 #social {
-	margin: 0 0 0 0;
 }
 
 #contact {
-	margin: 0 0 0 0;
 }
 
 #footer {
-	margin: 0 0 0 0;
+}
+
+#logo {
+	width: 15%;
 }
