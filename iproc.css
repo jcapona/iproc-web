@@ -2,34 +2,91 @@ body {
   background-color: white;
 }
 
+h1, h2, h3, p, li {
+	font-family: 'Alegreya Sans', sans-serif;
+}
+h1 {
+	font-weight: 800;
+	color: #4aa004;
+}
+
+h2 {
+	font-weight: 500;
+	color: #4aa004;
+}
+
+p, li {
+	font-weight: 400;
+}
 #navbar {
 	background: white;
 	margin: 0 0 0 0;
 }
+
 #header {
 	background : url('img/banner.png') no-repeat center center;
 	background-size: 100% 100%;
   	background-size: cover;
-  	margin: 0 0 0 0;
-  	height: 50vh;
+  	margin: 0 0 0 0;  	
+}
+
+.section {
+	padding: 25px 0 40px 0;
+}
+
+.section h1 {
+	text-align: center;
+	padding: 50px 0 75px 0;
 }
 
 #content {
-	padding: 30px 0 0 30px;
+}
+
+.feat-main {
+	text-align: center;
+}
+
+.feat-main img {
+	width: 75%;
+}
+
+.feat-submain {
+	margin-top: 50px;
+}
+
+.feat-submain img {
+	height: 50%;
 }
 
 #social {
-	padding: 30px 0 0 30px;
+	text-align: center;
 }
 
 #contact {
-	padding: 30px 0 0 30px;
 }
 
 #footer {
-	padding: 30px 0 0 30px;
+	text-align: center;
 }
 
 #logo {
 	width: 15%;
+}
+
+.social {
+	color: #4aa004;
+    -webkit-transition: all 0.5s ease; /* Safari and Chrome */
+    -moz-transition: all 0.5s ease; /* Firefox */
+    -ms-transition: all 0.5s ease; /* IE 9 */
+    -o-transition: all 0.5s ease; /* Opera */
+    transition: all 0.5s ease;
+}
+
+.social:hover {
+	color: lightgreen;
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
 }
