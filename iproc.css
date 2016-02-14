@@ -39,14 +39,39 @@ p, li {
 	margin:0;
 }
 
+.slide {
+	font-size: 500%;
+	margin: 10px 0 10px 0;
+}
+
+.slide-sub {
+	font-size: 300%;
+	margin: 10px 0 10px 0;
+}
+
+.focus {
+	color: #4AA004;
+	font-size: 130%;
+}
+
+
 #header {
 	background : url('img/banner_black.png') no-repeat center center;
 	background-size: 100% 100%;
   	background-size: cover;
   	margin: 0 0 0 0;
+  	padding: 200px 0 150px 0;
+  	font-size: 150%;
+  	height: 80vh;
+}
+
+#header-2 {
+	background : white;
+  	margin: 0 0 0 0;
   	padding: 150px 0 150px 0;
   	font-size: 150%;
 }
+
 
 #header p, #header h1, #header h2, #header h3 {
 	color: white;
