@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-	width: 50%;
+	
 }
 
 h1, h2, h3, p, li {
@@ -32,13 +32,13 @@ h2 {
 }
 
 h3 {
-	font-weight: 100;
+	font-weight:300;
 	color: black;
 	font-size: 150%;
 }
 
 p, li {
-	font-weight: 400;
+	font-weight: 100;
 	font-size: 125%;
 }
 
@@ -47,7 +47,11 @@ p, li {
     border-width: 0;
 	margin:0;
 	padding: 2vh 0 0 0;
-	height: 10vh;
+	min-height: 10vh;
+}
+
+#nav-btns {
+	border-width: 0;
 }
 
 #navbar a {
@@ -66,7 +70,7 @@ p, li {
 
 .focus {
 	color: #4AA004;
-	font-size: 115%;
+	font-size: 100%;
 }
 
 
@@ -76,11 +80,12 @@ p, li {
   	margin: 0 0 0 0;
   	padding: 30vh 0 30vh 0;
   	font-size: 150%;
-  	height: 100vh;
+  	height: auto;
 }
 
 #header p, #header h1, #header h2, #header h3 {
 	color: white;
+	font-size: 8vmin;
 }
 
 .section {
