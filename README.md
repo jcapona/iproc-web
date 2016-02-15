@@ -1,7 +1,7 @@
 # iproc-web
 
-IPROC's landing page.
+IPROC's web server, to display web page.
 
-Uses Node.js + Express server to display web page.
+Uses Node.js + Express.
 
 [http://www.iproc.co](http://www.iproc.co)
