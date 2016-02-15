@@ -13,4 +13,23 @@ $(document).ready(function() {
     });
   });
 
+  $("#contact-form").on('submit',function(e)
+  {
+    e.stopPropagation();
+    e.preventDefault();
+
+    $.ajax({
+        url:'/contact',
+        type:'POST',
+        data:$(this).serialize(),
+        error: function(jqXHR, textStatus, errorThrown) {
+          $('.form-fail').removeClass("hidden");
+        },
+        success:function(result){
+          $('.form-success').removeClass("hidden");
+          $('.form-fail').addClass("hidden");
+          $('.form-control').prop("disabled",true);
+        }
+    });
+  });
 });
