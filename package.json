@@ -1,0 +1,28 @@
+{
+  "name": "iproc-web",
+  "version": "0.0.1",
+  "description": "IPROC web page server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jcapona/iproc-web.git"
+  },
+  "keywords": [
+    "startup",
+    "iproc",
+    "security",
+    "computer",
+    "vision"
+  ],
+  "author": "Jorge Capona",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/jcapona/iproc-web/issues"
+  },
+  "dependencies": {
+    "express": "~4.13.4"
+  }
+}
