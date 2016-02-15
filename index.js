@@ -31,11 +31,17 @@ app.get('/*', function (req, res) {
 
 app.post('/contact', urlencodedParser, function(req, res) {
  
-  if(!req.body) 
-    return res.sendStatus(400);
+  if(!req.body)
+  {
+    res.status(400);
+    return res.send('Your message couldnt be sent. Please try again later');
+  }
  
   if(req.body.antispam !== '2')
-    return res.send("");
+  {
+    res.status(400);
+    return res.send('Please, answer correctly the antispam question.');
+  }
 
   var mailOptions = {
     to : process.env.MAIL_TO,
@@ -43,8 +49,6 @@ app.post('/contact', urlencodedParser, function(req, res) {
     text : "From: "+req.body.email+"\nMessage: "+req.body.message
   } 
 
-  console.log(mailOptions);
-  
   transporter.sendMail(mailOptions, function(error, info){
     if(error)
     {
@@ -54,7 +58,7 @@ app.post('/contact', urlencodedParser, function(req, res) {
     else
     {
       console.log('Message sent: ' + info.response);
-      res.end("sent");
+      return res.send("Success");
     }
   });
 });
