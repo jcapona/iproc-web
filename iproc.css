@@ -2,6 +2,12 @@ body {
   background-color: white;
 }
 
+#nav-btns .active li, #nav-btns .active a {
+    background-color: white;
+    color: #4AA004;
+    font-weight: 500;
+}
+
 .container {
 	width: 50%;
 }
@@ -35,8 +41,15 @@ p, li {
 }
 
 #navbar {
-	background: white;
+    background-color: white;
+    border-width: 0;
 	margin:0;
+	padding: 2vh 0 0 0;
+	height: 10vh;
+}
+
+#navbar a {
+    color: black;
 }
 
 .slide {
@@ -51,27 +64,18 @@ p, li {
 
 .focus {
 	color: #4AA004;
-	font-size: 130%;
+	font-size: 115%;
 }
 
 
 #header {
 	background : url('img/banner_black.png') no-repeat center center;
-	background-size: 100% 100%;
-  	background-size: cover;
+	background-size: cover;
   	margin: 0 0 0 0;
-  	padding: 200px 0 150px 0;
+  	padding: 30vh 0 30vh 0;
   	font-size: 150%;
-  	height: 80vh;
+  	height: 100vh;
 }
-
-#header-2 {
-	background : white;
-  	margin: 0 0 0 0;
-  	padding: 150px 0 150px 0;
-  	font-size: 150%;
-}
-
 
 #header p, #header h1, #header h2, #header h3 {
 	color: white;
