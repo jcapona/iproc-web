@@ -23,12 +23,14 @@ $(document).ready(function() {
         type:'POST',
         data:$(this).serialize(),
         error: function(jqXHR, textStatus, errorThrown) {
+          $('.form-fail').html("<p>"+jqXHR.responseText+"</p>");
           $('.form-fail').removeClass("hidden");
         },
         success:function(result){
           $('.form-success').removeClass("hidden");
           $('.form-fail').addClass("hidden");
           $('.form-control').prop("disabled",true);
+          $('.form-btn').prop("disabled",true);
         }
     });
   });
