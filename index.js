@@ -4,7 +4,13 @@ var nodemailer = require('nodemailer');
 var app = express();
 
 
-var transporter = nodemailer.createTransport('smtps://'+process.env.MAIL_ID+'%40gmail.com:'+process.env.MAIL_PASS+'@smtp.gmail.com');
+var transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+      user: 'process.env.MAIL_ID',
+      pass: 'process.env.MAIL_PASS'
+  }
+});
 
 app.use(express.static(__dirname + '/views'));
 app.use(express.static(__dirname + 'views'));
