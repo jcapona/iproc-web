@@ -7,8 +7,8 @@ var app = express();
 var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-      user: 'process.env.MAIL_ID',
-      pass: 'process.env.MAIL_PASS'
+      user: process.env.MAIL_ID,
+      pass: process.env.MAIL_PASS
   }
 });
 
