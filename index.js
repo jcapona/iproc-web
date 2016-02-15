@@ -1,10 +1,12 @@
+var conf = require('./conf');
+
 var express = require('express');
 var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
 var app = express();
 
 
-var transporter = nodemailer.createTransport('smtps://'+MAIL_ID+'%40gmail.com:'+MAIL_PASS+'@smtp.gmail.com');
+var transporter = nodemailer.createTransport('smtps://'+conf.mail_id()+'%40gmail.com:'+conf.mail_pass()+'@smtp.gmail.com');
 
 app.use(express.static(__dirname + '/views'));
 app.use(express.static(__dirname + 'views'));
@@ -32,7 +34,7 @@ app.post('/contact', urlencodedParser, function(req, res) {
     return res.send("");
 
   var mailOptions = {
-    to : MAIL_TO,
+    to : conf.mail_to(),
     subject : "[Contact - Web]",
     text : "From: "+req.body.email+"\nMessage: "+req.body.message
   } 
