@@ -15,6 +15,8 @@ body {
 h1, h2, h3, p, li {
 	font-family: 'Alegreya Sans', sans-serif;
 	color: black;
+	webkit-text-stroke: 0.6px; 
+	-webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
